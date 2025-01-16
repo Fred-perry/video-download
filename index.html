@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ang">
+<title>Video download</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Téléchargeur de vidéos YouTube en ligne gratuit pour télécharger des vidéos YouTube en MP4 en qualité HD avec une vitesse de téléchargement élevée."/>
+
+	<meta name="robots" content="index,follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	<meta name="keywords" content="Téléchargeur de vidéos YouTube en ligne gratuit pour télécharger des vidéos YouTube en MP4 en qualité HD avec une vitesse de téléchargement élevée." />
+
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+
+  <style>
+    * {
+
+margin: 0;
+
+padding: 0;
+
+font-family: 'Poppins', sans-serif;
+
+}
+
+.mt-5, .my-5 {
+
+    margin-top: 0rem!important;
+
+}
+
+.card{
+  margin-top: 20vh;
+}
+
+h3{
+  font-weight: 550;
+  position: relative;
+  color: white;
+  text-shadow: 0 0  10px rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
+}
+
+h3:hover{
+ text-shadow: red -2px 0,
+              cyan 2px 0 ;
+ color: black;
+}
+
+#hd {
+
+  width:100%;
+
+  height:390px;
+
+  margin:0 0 50px 0;
+
+  }
+
+.custom-shape-divider-bottom-1610026357 {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    line-height: 0;
+
+    transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-bottom-1610026357 svg {
+
+    position: relative;
+
+    display: block;
+
+    width: calc(100% + 1.3px);
+
+    height: 183px;
+
+}
+
+.custom-shape-divider-bottom-1610026357 .shape-fill {
+
+    fill: #FFFFFF;
+
+}
+
+.btn{
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background: transparent;
+  color: black;
+  border: 1px solid #FFFFFF;
+}
+/*
+.home{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.col-md-6{
+  background: rgba(0, 0, 0, 0.3);
+}
+*/
+.card{
+  background:linear-gradient(rgba(15, 223, 237, 0.582),rgba(216, 39, 39, 0.6)) ;
+  border-radius: 15px;
+  box-shadow:  0 0 10px  rgba(0, 0, 0, 0.6),
+               0 0 20px  rgba(0, 0, 0, 0.6),
+               0 0 40px  rgba(0, 0, 0, 0.6),
+               0 0 80px  rgba(0, 0, 0, 0.6);
+  height: 330px;
+  width: 600px;
+  top: 10px;
+  transform:translate(move block left);
+  display: flex;
+  transition: 0.5s;
+  justify-content: space-between;
+}
+
+.card:hover{
+  width: 620px;
+  height: 350px;
+  box-shadow: red 5px  0 20px,
+              cyan -5px -8px;
+}
+
+.form-control{
+  border-radius: 10px;
+  background:transparent;
+}
+.form-control:hover{
+  background: linear-gradient(rgba(179, 233, 250, 0.2), rgba(230, 176, 176, 0.5));
+  color: #FFFFFF;
+  
+}
+
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  width: 100px;
+  display: flex;
+}
+
+h1:hover{
+  color: #FFFFFF;
+  width: 60px;
+  text-shadow: red 3px 0,
+               cyan -3px 0;
+}
+
+body{
+  background: rgba(0, 0, 0, 0.2);
+}
+
+label{
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+label:hover{
+  color:black;
+  text-shadow:red 2px 0,
+              cyan -2px 0;
+}
+
+option{
+  background: linear-gradient(rgba(15, 223, 237, 0.582),rgba(216, 39, 39, 0.6));
+  color: black;
+}
+
+option:hover{
+  background: transparent;
+  color: #FFFFFF;
+}
+
+/*---------- media Query pour les petits ecrans ---*/
+@media screen and (max-width: 780px){
+  .card{
+  width: 100%;
+  height: 100%;
+  }
+}
+
+  </style>
+
+</head>
+
+<body>
+<header><h1><b>fred.</b></h1></header>
+<div>
+
+<div id='hd' class="home">
+
+  <!---<center>
+    <img alt='youtube video downloader' height='150' src='https://1.bp.blogspot.com/-6iQK-ugxaMA/XzlEKT2IKCI/AAAAAAAAB8w/ch-bNMemZroo07x-raUTXatJH2jQZh1hACLcBGAsYHQ/s1600/aaaaaaa.png' 
+    width='100' title='Video'/>
+  </center>--->
+
+<div class="col-md-6 offset-md-3 mt-5 mt-3">
+
+    <div class="card">
+
+      <div class="title">
+
+        <center><h3 data-text="frontend"><b>Vidéo Download</b></h3>
+      </div>
+
+      <div class="card-body">
+
+        <div class="row">
+
+          <div class="col-md-12">
+
+            <div class="form-group">
+
+              <label class="text-weight" ><b>lien de votre vidéo:</b></label>
+
+              <input type="txt" name="link" class="form-control link" placeholder="lien de la vidéo" required>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <form class="form-download">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <div class="form-group">
+
+                <label class="text-weight"><b> Format de téléchargement:</b></label>
+
+                <select class="form-control formte" required>
+
+                  <option selected disabled  style="font-family:'Courier New', Courier, monospace;" required>Sélectionnez</option>
+                  <option value="mp3">Mp3</option>
+
+                  <option value="mp4a">144 Mp4</option>
+
+                  <option value="360">360 Mp4</option>
+
+                  <option value="480">480 Mp4</option>
+
+                  <option value="720">720 Mp4</option>
+
+                  <option value="1080">1080 Mp4</option>
+
+                  <option value="4k">4k Mp4</option>
+
+                  <option value="8k">8k Mp4</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <div class="form-group mt-4 download-video">
+
+                <button  class="btn" type="submit">Télécharger</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!----<div class="custom-shape-divider-bottom-1610026357">
+
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+
+    </svg>
+
+</div>----->
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+  $(".btn").click(function(){
+
+      var link = $(".link").val();
+
+    var fromate = $(".formte").children("option:selected").val();
+
+    var src =""+link+"="+fromate+"";
+
+    downloadVideo(link,fromate);
+
+  });
+
+  function downloadVideo(link,fromate) {
+
+      $('.download-video').html('<iframe style="width:100%;height:50px;border:0;overflow:none; background:transparent;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+
+  }
+
+</script>
+
+</html>
