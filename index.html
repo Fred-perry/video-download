@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ang">
+<html lang="fr
 <title>Video download</title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<meta name="description" content="Téléchargeur de vidéos YouTube en ligne gratuit pour télécharger des vidéos YouTube en MP4 en qualité HD avec une vitesse de téléchargement élevée."/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="index,follow" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,37 +28,43 @@
 
   <style>
     * {
-
-margin: 0;
-
-padding: 0;
-
-font-family: 'Poppins', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mt-5, .my-5 {
 
     margin-top: 0rem!important;
+    background: transparent;
 
 }
 
 .card{
-  margin-top: 20vh;
+   margin-top: 20vh;
 }
 
 h3{
   font-weight: 550;
   position: relative;
-  color: white;
-  text-shadow: 0 0  10px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  text-shadow: 0 0  10px #cad3dc;
   transition: 0.6s;
 }
 
 h3:hover{
  text-shadow: red -2px 0,
               cyan 2px 0 ;
- color: black;
+}
+
+body.light h3{
+  color: #091921;
+  text-shadow: 0 0 10px #091921;
+}
+
+body.light h3:hover{
+  text-shadow: red -2px 0,
+              cyan 2px 0 ;
 }
 
 #hd {
@@ -68,6 +74,8 @@ h3:hover{
   height:390px;
 
   margin:0 0 50px 0;
+
+  background: transparent;
 
   }
 
@@ -87,6 +95,8 @@ h3:hover{
 
     transform: rotate(180deg);
 
+    background: transparent;
+
 }
 
 .custom-shape-divider-bottom-1610026357 svg {
@@ -99,6 +109,8 @@ h3:hover{
 
     height: 183px;
 
+    background: transparent;
+
 }
 
 .custom-shape-divider-bottom-1610026357 .shape-fill {
@@ -108,20 +120,21 @@ h3:hover{
 }
 
 .btn{
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffff;
+  background: #cad3dc;
+  color: #091921;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px #FFFFFF;
   width: 100%;
   transition: 0.5s;
 }
 
 .btn:hover{
   background: transparent;
-  color: black;
+  color: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
+
 /*
 .home{
   background: rgba(0, 0, 0, 0.3);
@@ -131,6 +144,8 @@ h3:hover{
   background: rgba(0, 0, 0, 0.3);
 }
 */
+
+/*
 .card{
   background:linear-gradient(rgba(15, 223, 237, 0.582),rgba(216, 39, 39, 0.6)) ;
   border-radius: 15px;
@@ -146,51 +161,88 @@ h3:hover{
   transition: 0.5s;
   justify-content: space-between;
 }
+*/
+.card {
+  height: 330px;
+  width: 500px;
+  display: flex;
+  background: #091921;
+  border: 1px solid #091921;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px #091921,
+              20px 20px 20px #091921,
+      inset -8px -8px 15px #091921,
+      inset 20px 20px 20px #091921;
+  transition: 0.5s;
+}
 
 .card:hover{
   width: 620px;
-  height: 350px;
-  box-shadow: red 5px  0 20px,
-              cyan -5px -8px;
+  height: 360px;
+  box-shadow:20px 20px 20px #091921;
+  transition: 0.5s;
 }
 
-.form-control{
-  border-radius: 10px;
-  background:transparent;
-}
-.form-control:hover{
-  background: linear-gradient(rgba(179, 233, 250, 0.2), rgba(230, 176, 176, 0.5));
-  color: #FFFFFF;
-  
+body.light .card:hover{
+  box-shadow:20px 20px 20px #FFFFFF;
+  transition: 0,5s;
 }
 
 h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: black;
-  width: 100px;
-  display: flex;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  color: #091921;
+  position: static;
+  transition: 0.5s;
+  text-shadow: 0 0 10px #091921;
 }
 
 h1:hover{
-  color: #FFFFFF;
-  width: 60px;
-  text-shadow: red 3px 0,
-               cyan -3px 0;
+  text-shadow: red 2px 0,
+               cyan -2px 0;
 }
 
-body{
-  background: rgba(0, 0, 0, 0.2);
+body.light h1:hover{
+  text-shadow: red 2px 0,
+               cyan -2px 0;
+}
+
+body.light h1{
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF;
+  transition: 0.5s;
+}
+
+
+
+
+body {
+ background: #cad3dc;
+}
+
+body.light{
+  background: #091921;
 }
 
 label{
-  color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF;
+  transition: 0.5s;
+}
+
+body.light label{
+  color: #091921;
+  text-shadow: 0 0 10px #091921;
+  transition: 0.5s;
+}
+
+body.light label:hover{
+  text-shadow:red 1px 0,
+              cyan -1px 0;
 }
 
 label:hover{
-  color:black;
-  text-shadow:red 2px 0,
-              cyan -2px 0;
+  text-shadow:red 1px 0,
+              cyan -1px 0;
 }
 
 option{
@@ -206,16 +258,134 @@ option:hover{
 /*---------- media Query pour les petits ecrans ---*/
 @media screen and (max-width: 780px){
   .card{
-  width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+body{
   height: 100%;
+  width: 100%;
+}
+
+  body.light {
+    width: 100%;
+    height: 100%;
+  }
+  body.light .card:hover{
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+  }
+  .card:hover{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
   }
 }
+
+
+/*
+body.light .card{
+  color: #606060;
+  border: 1px solid #CAD3E3;
+  background: #CAD3E3;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+*/
+
+
+body.light .card {
+  background: #d1dae3;
+  border: 1px solid #d1dae3;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.785),
+              15px 15px 15px rgba(212, 203, 203, 0.705),
+          inset -8px -8px 15px rgba(235, 232, 232, 0.5),
+          inset 15px 15px 15px rgba(82, 80, 80, 0.5);
+}
+
+body.light .btn{
+  background: #091921;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px #091921;
+}
+
+body.light .btn:hover{
+  background: transparent;
+  color: #091921;
+}
+.toggleClass {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border-radius: 50%;
+  background: #091921;
+  color: #091921;
+  font-family: monospace;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.toggleClass:hover{
+  text-shadow: 0 0 20px #091921;
+}
+
+body.light .toggleClass:hover{
+  text-shadow: 0 0 20px #FFFFFF;
+}
+
+.toggleClass::before {
+  position: absolute;
+  left: 25px;
+  content: 'Dark Mode';
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+body.light .toggleClass {
+  background: #d1dae3;
+  color: #d1dae3;
+  transition: 0.5s;
+}
+
+body.light .toggleClass::before {
+  content: 'Light Mode';
+  transition: 0.5s;
+}
+
+.form-control{
+  background: transparent;
+  box-shadow: 0 0 10px #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+}
+
+body.light .form-control{
+  background: transparent;
+  box-shadow: 0 0 10px #091921;
+  color: #091921;
+  border-radius: 10px;
+  border: 1px solid #091921;
+}
+
+body.light .form-control:hover{
+  box-shadow: 0 0 10px #FFFFFF;
+}
+
+.form-control:hover{
+  box-shadow: 0 0 10px #091921;
+}
+
 
   </style>
 
 </head>
 
-<body>
+<body class="light">
 <header><h1><b>fred.</b></h1></header>
 <div>
 
@@ -323,10 +493,13 @@ option:hover{
 </div>----->
 
 </div>
-
+<div class="toggleClass" onclick="toggleClass()"></div>
 </body>
-
 <script type="text/javascript">
+      function toggleClass() {
+          const body = document.querySelector('body');
+          body.classList.toggle('light');
+      }
 
   $(".btn").click(function(){
 
@@ -342,7 +515,7 @@ option:hover{
 
   function downloadVideo(link,fromate) {
 
-      $('.download-video').html('<iframe style="width:100%;height:50px;border:0;overflow:none; background:transparent;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+      $('.download-video').html('<iframe style="background: transparent; width:100%;height:50px;border-radius:10px;overflow:none;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
 
   }
 
