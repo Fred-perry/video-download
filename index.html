@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr
+<html lang="fr">
 <title>Video download</title>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<meta name="description" content="Téléchargeur de vidéos YouTube en ligne gratuit pour télécharger des vidéos YouTube en MP4 en qualité HD avec une vitesse de téléchargement élevée."/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="index,follow" />
@@ -24,7 +23,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/logo/38b84a33818b40e1a51cc4e0868672b9-free (1).png" sizes="16x16" type="image/png">
 
   <style>
     * {
@@ -44,11 +43,11 @@
    margin-top: 20vh;
 }
 
-h3{
+body.light h3{
   font-weight: 550;
   position: relative;
   color: #FFFFFF;
-  text-shadow: 0 0  10px #cad3dc;
+  text-shadow: 0 0  10px #FFFFFF;
   transition: 0.6s;
 }
 
@@ -57,8 +56,8 @@ h3:hover{
               cyan 2px 0 ;
 }
 
-body.light h3{
-  color: #091921;
+h3{
+  color:  #091921;
   text-shadow: 0 0 10px #091921;
 }
 
@@ -119,7 +118,7 @@ body.light h3:hover{
 
 }
 
-.btn{
+body.light .btn{
   background: #cad3dc;
   color: #091921;
   border-radius: 10px;
@@ -129,10 +128,26 @@ body.light h3:hover{
   transition: 0.5s;
 }
 
-.btn:hover{
+
+.btn{
+  background:  #091921;
+  color:  #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #091921;
+  width: 100%;
+  transition: 0.5s;
+}
+
+body.light .btn:hover{
   background: transparent;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.btn:hover{
+  background: transparent;
+  color: #091921;
+  border: 1px solid #091921;
 }
 
 /*
@@ -162,7 +177,23 @@ body.light h3:hover{
   justify-content: space-between;
 }
 */
+
+
 .card {
+  height: 330px;
+  width: 500px;
+  display: flex;
+  background: #d1dae3;
+  border: 1px solid #d1dae3;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.785),
+              15px 15px 15px rgba(212, 203, 203, 0.705),
+          inset -8px -8px 15px rgba(235, 232, 232, 0.5),
+          inset 15px 15px 15px rgba(82, 80, 80, 0.5);
+  transition: 0.5s;
+}
+
+body.light .card {
   height: 330px;
   width: 500px;
   display: flex;
@@ -176,19 +207,21 @@ body.light h3:hover{
   transition: 0.5s;
 }
 
-.card:hover{
+body.light .card:hover{
   width: 620px;
   height: 360px;
   box-shadow:20px 20px 20px #091921;
   transition: 0.5s;
 }
 
-body.light .card:hover{
-  box-shadow:20px 20px 20px #FFFFFF;
+.card:hover{
+  width: 620px;
+  height: 360px;
+  box-shadow:20px 20px 20px #FFFFFF; 
   transition: 0,5s;
 }
 
-h1{
+body.light h1{
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
   color: #091921;
   position: static;
@@ -196,40 +229,42 @@ h1{
   text-shadow: 0 0 10px #091921;
 }
 
-h1:hover{
-  text-shadow: red 2px 0,
-               cyan -2px 0;
-}
-
 body.light h1:hover{
   text-shadow: red 2px 0,
                cyan -2px 0;
 }
 
-body.light h1{
+h1:hover{
+  text-shadow: red 2px 0,
+               cyan -2px 0;
+}
+
+h1{
   color: #FFFFFF;
   text-shadow: 0 0 10px #FFFFFF;
   transition: 0.5s;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  position: static;
 }
 
 
 
 
-body {
+body.light {
  background: #cad3dc;
 }
 
-body.light{
+body{
   background: #091921;
 }
 
-label{
+body.light label{
   color: #FFFFFF;
   text-shadow: 0 0 10px #FFFFFF;
   transition: 0.5s;
 }
 
-body.light label{
+label{
   color: #091921;
   text-shadow: 0 0 10px #091921;
   transition: 0.5s;
@@ -293,26 +328,8 @@ body.light .card{
 */
 
 
-body.light .card {
-  background: #d1dae3;
-  border: 1px solid #d1dae3;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.785),
-              15px 15px 15px rgba(212, 203, 203, 0.705),
-          inset -8px -8px 15px rgba(235, 232, 232, 0.5),
-          inset 15px 15px 15px rgba(82, 80, 80, 0.5);
-}
 
-body.light .btn{
-  background: #091921;
-  color: #FFFFFF;
-  box-shadow: 0 0 10px #091921;
-}
-
-body.light .btn:hover{
-  background: transparent;
-  color: #091921;
-}
-.toggleClass {
+body.light .toggleClass {
   position: absolute;
   top: 30px;
   right: 150px;
@@ -329,11 +346,11 @@ body.light .btn:hover{
   transition: 0.5s;
 }
 
-.toggleClass:hover{
+body.light .toggleClass:hover{
   text-shadow: 0 0 20px #091921;
 }
 
-body.light .toggleClass:hover{
+.toggleClass:hover{
   text-shadow: 0 0 20px #FFFFFF;
 }
 
@@ -345,18 +362,30 @@ body.light .toggleClass:hover{
   transition: 0.5s;
 }
 
-body.light .toggleClass {
+.toggleClass {
   background: #d1dae3;
   color: #d1dae3;
+  transition: 0.5s;
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   transition: 0.5s;
 }
 
 body.light .toggleClass::before {
-  content: 'Light Mode';
+  content: 'light mode';
   transition: 0.5s;
 }
 
-.form-control{
+body.light .form-control{
   background: transparent;
   box-shadow: 0 0 10px #FFFFFF;
   color: #FFFFFF;
@@ -364,7 +393,7 @@ body.light .toggleClass::before {
   border: 1px solid #FFFFFF;
 }
 
-body.light .form-control{
+.form-control{
   background: transparent;
   box-shadow: 0 0 10px #091921;
   color: #091921;
@@ -372,21 +401,24 @@ body.light .form-control{
   border: 1px solid #091921;
 }
 
-body.light .form-control:hover{
+.form-control:hover{
   box-shadow: 0 0 10px #FFFFFF;
 }
 
-.form-control:hover{
+body.light .form-control:hover{
   box-shadow: 0 0 10px #091921;
 }
-
 
   </style>
 
 </head>
 
 <body class="light">
-<header><h1><b>fred.</b></h1></header>
+<header>
+ <div>
+  <img src="/logo/38b84a33818b40e1a51cc4e0868672b9-free.png" alt="mon_logo" width="50" height="50" id="mon_logo"> <label for="mon_logo"><h1><b>fred.</b></h1></label>
+</div>
+</header>
 <div>
 
 <div id='hd' class="home">
