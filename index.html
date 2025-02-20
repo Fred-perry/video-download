@@ -409,6 +409,32 @@ body.light .form-control:hover{
   box-shadow: 0 0 10px #091921;
 }
 
+
+body.light img{
+  border-radius: 50px;
+  background: transparent;
+  filter: drop-shadow(0px 0px 12px #091921);
+  transition: .5s;
+
+}
+
+img{
+  border-radius: 50px;
+  background: transparent;
+  filter: drop-shadow(0px 0px 12px #FFFFFF);
+  transition: .5s;
+}
+
+body.light img:hover{
+  filter: drop-shadow(0px 0px 12px #FFFFFF);
+  transform: translate(10px, 0px);
+}
+
+img:hover{
+  filter: drop-shadow(0px 0px 12px #091921);
+  transform: translate(10px, 0px);
+}
+
   </style>
 
 </head>
@@ -416,7 +442,7 @@ body.light .form-control:hover{
 <body class="light">
 <header>
  <div>
-  <img src="/logo/38b84a33818b40e1a51cc4e0868672b9-free.png" alt="mon_logo" width="50" height="50" id="mon_logo"> <label for="mon_logo"><h1><b>fred.</b></h1></label>
+  <img src="/logo/38b84a33818b40e1a51cc4e0868672b9-free.png" alt="mon_logo" width="100" height="100" id="mon_logo" style="border-radius: 50px;"> <label for="mon_logo"><h1><b>fred.</b></h1></label>
 </div>
 </header>
 <div>
