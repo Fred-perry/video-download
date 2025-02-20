@@ -222,7 +222,6 @@ body.light .card:hover{
 }
 
 body.light h2{
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
   color: #091921;
   position: static;
   transition: 0.5s;
@@ -232,18 +231,19 @@ body.light h2{
 body.light h2:hover{
   text-shadow: red 2px 0,
                cyan -2px 0;
+  color: #091921;
 }
 
 h2:hover{
   text-shadow: red 2px 0,
                cyan -2px 0;
+  color: #FFFFFF;
 }
 
 h2{
   color: #FFFFFF;
   text-shadow: 0 0 10px #FFFFFF;
   transition: 0.5s;
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
   position: static;
 }
 
@@ -480,6 +480,39 @@ body.light a:hover{
   text-shadow: 0 0 10px #091921;
 }
 
+
+.other{
+  background: transparent;
+  color: #091921;
+  border-radius: 10px;
+  border: 1px solid #091921;
+  box-shadow: 0 0 10px #FFFFFF;
+  transition: .5s;
+  width: 100;
+}
+
+body.light .other{
+  background: transparent;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 10px #091921;
+  transition: .5s;
+  width: 100;
+}
+
+.other:hover{
+  background: #091921;
+  color: #FFFFFF;
+ transform: translate(10px, 0px);
+}
+
+body.light .other:hover{
+  background: #FFFFFF;
+  color: #091921;
+  transform: translate(10px, 0px);
+}
+
   </style>
 
 </head>
@@ -488,7 +521,7 @@ body.light a:hover{
 <header>
  <div>
   <img src="logo/38b84a33818b40e1a51cc4e0868672b9-free.png" alt="mon_logo" width="100" height="100" id="mon_logo" style="border-radius: 50px;" href="index.html"> 
-  <label for="mon_logo"><a href="index.html"><h2><b>other</b></h2></a></label>
+  <label for="mon_logo"><a href="index.html"><button class="other" id="other" name="other"><h2>Other</h2></button></a></label>
 </div>
 </header>
 <div>
